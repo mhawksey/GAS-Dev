@@ -16,9 +16,9 @@ jobs:
           cache: npm
       - run: npm ci
       - if: ${{ endsWith(github.ref, 'main') }}
-        run: ./prepare.sh prd
+        run: prepare.sh prd
       - if: ${{ endsWith(github.ref, 'develop') }}
-        run: ./prepare.sh dev
+        run: prepare.sh dev
       - name: Linting
         run: npm run lint
       - run: |
