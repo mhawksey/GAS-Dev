@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "deploy_dev": "./prepare.sh dev && npx clasp push -f",
-    "deploy_prd": "./prepare.sh prd && npx clasp push -f",
+    "deploy_dev": "prepare.sh dev && npx clasp push -f",
+    "deploy_prd": "prepare.sh prd && npx clasp push -f",
     "lint": "eslint . --fix"
   },
   "pre-commit": [
